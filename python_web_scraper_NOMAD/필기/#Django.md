@@ -16,20 +16,20 @@ keywords arguments, **kwargs -> {} dictionary로 묶임
 
 ### 3.2 Class와 instance
 * main.py
-  ```
+  ```python
   class Car():
   wheels = 4
   doors = 4
   windows = 4
   seats = 4
 
-    porche = Car()
-    porche.color = "red"
+  porche = Car()
+  porche.color = "red"
 
-    ferrari = Car()
-    ferrari.color="yellow"
-    print(ferrari.color)
-    ```
+  ferrari = Car()
+  ferrari.color="yellow"
+  print(ferrari.color)
+  ```
 Car class로 instance인 porche와 ferrari를 만들었다.
 class는 설계도, instance는 완성품(?) 이라고 생각하면 된다.
 
@@ -39,7 +39,7 @@ class는 설계도, instance는 완성품(?) 이라고 생각하면 된다.
 예시 porche.start(porche)
 
 ### 3.4 객체지향 프로그래밍 예시
-```
+```python
 class Car():
 
   def __init__(self, **kwargs):
@@ -61,8 +61,8 @@ class Car():
   print(mini.color, mini.price)
   ```
 
-  ### 3.5 상속과 확장
-  ```
+### 3.5 상속과 확장
+  ```python
   class Car():
 
   def __init__(self, **kwargs):
